@@ -500,7 +500,7 @@ def gameControlLoop():
             thumby.display.drawText(f"{result:.2f} sec", 0, 8, 1)
             thumby.display.drawText("Best:", 0, 18, 1)
             thumby.display.drawText(f"{best:.2f} sec", 0, 26, 1)
-            if t - tEntered > 3000:
+            if t - tEntered > 5000:
                 return
         else:
             thumby.display.drawText(f"Level {game.currentLevel}", 14, 8, 1)
