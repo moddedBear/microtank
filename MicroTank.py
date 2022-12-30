@@ -428,7 +428,7 @@ def gameLoop():
         if game.paused:
             thumby.display.drawText("-Paused-", 12, thumby.display.height // 2 - 3, 1)
             thumby.display.update()
-            if thumby.buttonB.justPressed():
+            if thumby.buttonB.justPressed() or thumby.buttonA.justPressed():
                 game.paused = False
             continue
         cleanup()
